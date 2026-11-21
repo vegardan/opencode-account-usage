@@ -1,0 +1,37 @@
+# Dependencies and generated output
+node_modules/
+dist/
+coverage/
+*.log
+
+# Hidden local configuration and IDE metadata are private by default.
+# Explicitly allow shared repository metadata.
+.*
+!.gitignore
+!.gitattributes
+!.editorconfig
+!.github/
+!.github/**
+
+# Local settings, credentials, and backups
+*.local
+*.local.*
+*.bak
+auth.json
+credentials*.json
+opencode.json
+opencode.jsonc
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Real usage exports and local databases
+openai-usage-*.csv
+exports/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*

@@ -1,0 +1,12 @@
+/* OpenCode 2.3.x collapses TitlebarItem labels until hover. Keep only our
+   usage item expanded; leave other plugin and built-in pills untouched. */
+[data-slot="titlebar-update"]:has(> button[aria-label^="OpenAI account usage:"]) {
+  width: max-content !important;
+  max-width: 100%;
+}
+
+[data-slot="titlebar-update"]:has(> button[aria-label^="OpenAI account usage:"]) [data-slot="titlebar-update-label"] {
+  opacity: 1 !important;
+  transform: none !important;
+  translate: none !important;
+}
